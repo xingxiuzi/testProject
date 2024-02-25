@@ -1,0 +1,33 @@
+.leftSideBar{
+    position: relative;
+    padding-top: 1rem;
+    background-color: lightgray;
+    height: 100%;
+    box-sizing: border-box;
+    .ant-tree-list-holder-inner,.ant-tree{
+        background: transparent !important;
+    }
+
+    .navigate{
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.3rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding-bottom: 0.2rem;
+        img{
+            width: 0.5rem;
+        }
+        &.active{
+            border-top: 1px solid gray;
+            left: 0.3rem;
+            padding: 0.2rem;
+            padding-left: 0rem;
+        }
+    }
+    .ant-tree-list-holder-inner{
+        font-size: 0.3rem;
+    }
+}

@@ -1,0 +1,201 @@
+.App{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-size: 0.3rem;
+  
+  .rightSide{
+    flex: 1;
+    background: gray;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    .header{
+      height: 0.5rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      box-sizing: border-box;
+      padding-right: 30px;
+      img{
+        width: 0.4rem;
+        border: 1px solid gray;
+        border-radius: 3px;
+      }
+    }
+  }
+  .rightContent{
+    padding:0.2rem 0 0 0.2rem;
+    flex: 1;
+    .contentArea{
+      background:#fff;
+      height: 100%;
+      padding: 0.4rem;
+      box-sizing: border-box;
+      .contentArea-innerBorder{
+        border: 1px solid gray;
+        border-radius: 4px;
+        height: 100%;
+        .table-header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 1rem;
+          border-bottom: 1px solid gray;
+          padding: 0 0.2rem;
+          .add-btn{
+            display: flex;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 4px;
+            padding: 0.1rem;
+            cursor: pointer;
+            img{
+              width: 0.4rem;
+            }
+            &:hover{
+              background: gray;
+            }
+          }
+        }
+
+        .searchBox{
+          padding: 0.2rem 0;
+          display: flex;
+          justify-content: end;
+          padding-right: 0.2rem;
+          .search{
+            padding: 0.1rem 0.2rem;
+            display: flex;
+            align-items: center;
+            width: 3rem;
+            border: 1px solid gray;
+            border-radius: 4px;
+          }
+          img{
+            width: 0.3rem;
+
+          }
+          input{
+            margin-left: 0.1rem;
+            outline: none;
+            border: none;
+            width: 80%;
+          }
+        }
+
+        .tableArea{
+          .tableArea-header{
+            border-radius: 0.2rem 0.2rem 0 0;
+            background: gray;
+            height: 0.7rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            div{
+              min-width: 1.8rem;
+              text-align: center;
+            }
+            .birthday{
+              min-width: 2.4rem;
+            }
+          }
+          .pagination{
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .showPop{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .4);
+    .showPop-innerbox{
+      .tableArea-header{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid black;
+        div{
+          width: 2rem;
+          text-align: center;
+        }
+
+      }
+      padding: 1rem;
+      border-radius: 0.4rem;
+      width: 80%;
+      margin: 2rem auto;
+      background: gray;
+      .showPop-innerbox-body{
+        display: flex;
+        padding-top: 0.2rem;
+        justify-content: space-evenly;
+        &>input{
+          height: 0.6rem;
+          outline: none;
+          width: 1.8rem;
+          border: none;
+          background: transparent;
+          border-bottom: 1px solid black;
+          text-align: center;
+          font-size: 0.3rem;
+        }
+        &>div{
+          width: 1.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .ant-upload-picture-circle-wrapper{
+          width: auto;
+        }
+        .ant-upload.ant-upload-select{
+          width: 0.8rem !important;
+          height: 0.8rem !important;
+        }
+        .birthday{
+          input{
+            width: 1.4rem;
+          }
+        }
+      }
+      .control{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+        button{
+          margin-left: 0.3rem;
+        }
+      }
+      
+    }
+  }
+  .ant-upload.ant-upload-select{
+    width: 0.6rem !important;
+    height: 0.6rem !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    button{
+        div{
+            font-size: 0.2rem;
+            margin-top: 0.04rem !important;
+        }
+    }
+  }
+  .namedrop{
+    position: absolute;
+    padding: 0.2rem;
+    background: lightgray;
+    border-radius: 4px;
+    top: 0.5rem;
+  }
+}
